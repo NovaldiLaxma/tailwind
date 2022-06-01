@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               fontFamily: {
-                blaka: ['blaka'],
+                Inter: ['Inter'],
               },
             },
           },
@@ -22,20 +22,37 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="bg-[#c90404] border-double border-b-[15px]">
-        <p class="font-blaka text-6xl text-center tracking-widest py-3 bg-gradient-to-b from-[#0a1169] to-slate-100 bg-clip-text text-transparent">WELCOME</p>
+    <div class="bg-[#c90404] border-double border-y-[15px]">
+        <p class="font-Inter font-bold text-6xl text-center tracking-widest py-3 bg-gradient-to-b from-[#0a1169] to-slate-100 bg-clip-text text-transparent">WELCOME</p>
     </div>
 
     <section>
-       <div class="max-w-xl h-80 rounded-xl mx-auto mt-10 bg-orange-300 bg-cover shadow-xl shadow-slate-600 bg-no-repeat flex" style="background-image:url(./gambar/dogi.jpg);">
+
+       <div class="max-w-xl h-80 rounded-xl mx-auto mt-10 bg-orange-300 bg-cover shadow-xl shadow-slate-600 bg-no-repeat  border-8 border-gray-400 flex" style="background-image:url(./gambar/dogi.jpg);">
        <div class="h-[290px] w-[180px] ml-80 mt-5 bg-white/30 rounded-lg backdrop-blur-md hover:backdrop-opacity-5"></div>
     </div>
 
-       <div class="max-w-sm h-60 rounded-b-3xl mx-auto mt-10  bg-slate-500 shadow-xl shadow-red-700 bg-contain bg-no-repeat border-8 border-red-500 overflow-hidden" style="background-image:url(./gambar/kuli.jpg) ;">
-        <div class="w-full h-full bg-red-500 mix-blend-darken"></div>
+
+       <div class="max-w-sm h-60 rounded-b-3xl mx-auto mt-10  bg-slate-500 shadow-xl shadow-red-700 bg-contain bg-no-repeat flex" style="background-image:url(./gambar/kuli.jpg) ;">
+          <div class="w-[800px] h-[260px] bg-slate-500 mix-blend-exclusion mx-auto -mt-2 relative">
+            <div class="w-4 h-4 absolute ring-4 ring-white bg-slate-500 flex -top-4 -right-5 cursor-pointer">
+              <span class="text-2xl -mt-3 text-red-700 font-bold">x</span>
+            </div>
+            <p class="text-center text-green-900 text-6xl p-11"> Ini Iklan</p>
+          </div> 
         </div>
 
-        
+
+     <div class="mt-5 text-center">
+       <button class="font-bold text-white my-10 bg-green-600 px-5 py-1 rounded-2xl ring-4 ring-sky-400 hover:bg-green-900 active:bg-yellow-600 ">Upload
+       </button>
+
+       <button class="m-5 font-bold text-white my-10 bg-blue-600 px-5 py-1 rounded-2xl ring-4 ring-sky-400 focus:ring-red-900 hover:bg-white hover:text-blue-600">Save
+      </button>
+     </div> 
+
+         
+     <div class="mb-72"></div>
     </section>
     
 </body>
